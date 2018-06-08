@@ -8,6 +8,19 @@
  * Copyright (c) 2018 Daniel Eden
  */
 
+#bodybg {
+    background: url("../images/ball2.jpg");
+    background-size: 30%;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    height: 150px;
+}
+
+#h2 {
+    font-size: 200%;
+}
+
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;

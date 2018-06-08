@@ -14,6 +14,7 @@ $(document).ready(function() {
         document.querySelector("#left").innerHTML = left;
         document.querySelector("#guesses").innerHTML = guesses;
         document.querySelector("#answer").innerHTML = answer;
+        $("#answer").css({ opacity: ((10-left) / 10) });
     }
 
     function newAnswer(){
@@ -27,6 +28,7 @@ $(document).ready(function() {
         userKey = event.key.toLowerCase();
         left--;
         $("#guesses").append(userKey);
+        $("#winsdiv").removeClass('animated flip');
         checkMatch(userKey);
     }
 
